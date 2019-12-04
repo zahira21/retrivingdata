@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/takepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Take a picture" />
+
+    <ImageView
+        android:id="@+id/pics"
+        android:layout_width="224dp"
+        android:layout_height="230dp"
+        android:layout_below="@id/takepic"
+        android:foregroundGravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        ></ImageView>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:id="@+id/eee"
+        android:layout_below="@+id/pics"
+        android:layout_margin="50dp"/>
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eee"
+
+        android:text="Upload" />
+
+
+</RelativeLayout>

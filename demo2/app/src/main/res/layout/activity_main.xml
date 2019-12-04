@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LET'S TAKE A SURVEY"
+        android:textColor="#050505"
+        android:textSize="20dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/title"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textColor="#141414"
+        android:textSize="15dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/name"
+
+        />
+
+    <EditText
+        android:id="@+id/info"
+        android:layout_below="@+id/name"
+        android:layout_width="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email ID"
+        android:textColor="#141414"
+        android:textSize="15dp"
+        android:layout_below="@+id/info"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/email"></TextView>
+    <EditText
+        android:id="@+id/emailinfo"
+        android:layout_below="@+id/email"
+        android:layout_width="300dp"
+
+        android:layout_marginLeft="50dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lobut"
+        android:text="GET LOCATION"
+        android:layout_below="@id/emailinfo"
+        android:layout_marginLeft="50dp"/>
+
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailinfo"
+        android:layout_alignBaseline="@id/lobut"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@id/lobut"
+        android:text="Lattitude"
+        android:textColor="#000000 "
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:text="Submit"
+        android:layout_below="@+id/lobut"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>
